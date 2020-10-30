@@ -10,7 +10,7 @@ import retrofit2.http.GET
 interface MyApi {
 
     @GET("/")
-    suspend fun getData(): Call<String>
+    suspend fun getData(): String
 
     companion object{
         operator fun invoke():MyApi{
